@@ -1,0 +1,41 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+#toolbar {
+  margin-bottom: 10px;
+}
+
+#canvasContainer {
+  position: relative;
+  width: 800px;
+  height: 600px;
+}
+
+canvas {
+  border: 1px solid #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#drawingCanvas {
+  cursor: crosshair;
+}
+
+.color-button {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin: 0 5px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+button {
+  margin-right: 5px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Machine à colorier - Limitation aux contours</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="toolbar">
+    <button id="pen">Pinceau</button>
+    <button id="fill">Remplir</button>
+    <button id="clear">Effacer</button>
+    <label for="brushSize">Taille du pinceau :</label>
+    <input type="range" id="brushSize" min="1" max="50" value="5">
+  </div>
+  <div id="canvasContainer">
+    <!-- Canevas de fond pour l'image de base -->
+    <canvas id="baseCanvas" width="800" height="600"></canvas>
+    <!-- Canevas de dessin par-dessus -->
+    <canvas id="drawingCanvas" width="800" height="600"></canvas>
+  </div>
+  <div id="colors">
+    <div class="color-button" data-color="#000000" style="background-color: #000000;"></div>
+    <div class="color-button" data-color="#FF0000" style="background-color: #FF0000;"></div>
+    <div class="color-button" data-color="#00FF00" style="background-color: #00FF00;"></div>
+    <div class="color-button" data-color="#0000FF" style="background-color: #0000FF;"></div>
+    <div class="color-button" data-color="#FFFF00" style="background-color: #FFFF00;"></div>
+    <!-- Autres couleurs si besoin -->
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
