@@ -14,7 +14,7 @@ const regionTolerance = 20;
 
  
 const baseImage = new Image();
-baseImage.src = 'img/8433450.jpg';
+baseImage.src = 'img/a.png';
 baseImage.onload = function () {
   baseCtx.drawImage(baseImage, 0, 0, baseCanvas.width, baseCanvas.height);
 
